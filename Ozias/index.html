@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TE5Am — Construction Générale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== TOPBAR ===== -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="topbar-left">
+      <span><i class="fa-solid fa-phone"></i> +2250500156164</span>
+      <span><i class="fa-solid fa-envelope"></i> team80312@gmail.com</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <span class="topbar-divider"></span>
+      <span class="topbar-hours"><i class="fa-regular fa-clock"></i> Lun - Sam : 8h00 - 18h00</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== HEADER / NAV ===== -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+
+      <a href="#" class="logo">
+      <img src="images/logov.png" alt="" >
+      </a>
+  
+    
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="active">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#about">À propos</a>
+      <a href="#projects">Réalisations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-outline btn-nav">
+      <span>Devis Gratuit</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+    <button class="burger" id="burger" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=1600&auto=format&fit=crop" alt="Chantier de construction TE5Am">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <div class="container hero-content">
+    <div class="eyebrow"><i class="fa-solid fa-helmet-safety"></i> Bienvenue chez TE5Am</div>
+    <h1 class="hero-title">Transformer votre ambition<br>en expertise technique</h1>
+    <p class="hero-text">
+      Depuis plus de 15 ans, TE5Am conçoit et réalise des projets de construction
+      solides, durables et livrés dans les délais — du gros œuvre à la finition.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-solid">Voir nos réalisations</a>
+      <a href="#contact" class="btn btn-outline">
+        <span>Nous contacter</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <!-- Barre de devis rapide -->
+    <form class="quote-bar" id="quoteBar">
+      <div class="quote-field">
+        <label>Type de projet</label>
+        <select>
+          <option>Construction neuve</option>
+          <option>Rénovation</option>
+          <option>Génie civil</option>
+          <option>Extension</option>
+        </select>
+      </div>
+      <div class="quote-field">
+        <label>Budget estimé</label>
+        <select>
+          <option>Moins de 500 000 MAD</option>
+          <option>500K - 1M MAD</option>
+          <option>1M - 5M MAD</option>
+          <option>Plus de 5M MAD</option>
+        </select>
+      </div>
+      <div class="quote-field">
+        <label>Localisation</label>
+        <input type="text" placeholder="Ville, quartier...">
+      </div>
+      <div class="quote-field">
+        <label>Délai souhaité</label>
+        <select>
+          <option>Dès que possible</option>
+          <option>Dans 1 à 3 mois</option>
+          <option>Dans 3 à 6 mois</option>
+          <option>À définir</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-solid quote-submit">
+        <i class="fa-solid fa-paper-plane"></i> Demander
+      </button>
+    </form>
+  </div>
+
+  <div class="hero-stats">
+    <div class="container hero-stats-inner">
+      <div class="stat"><span class="stat-num" data-count="180">0</span><span class="stat-label">Projets livrés</span></div>
+      <div class="stat"><span class="stat-num" data-count="15">0</span><span class="stat-label">Années d'expérience</span></div>
+      <div class="stat"><span class="stat-num" data-count="60">0</span><span class="stat-label">Experts sur le terrain</span></div>
+      <div class="stat"><span class="stat-num" data-count="98">0</span><span class="stat-label">% clients satisfaits</span></div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ===== SHOWCASE CARTES (chantier) ===== -->
+<section class="cards-showcase">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow eyebrow-dark" style="color:var(--orange)"><i class="fa-solid fa-camera"></i> En Images</div>
+      <h2 class="section-title" style="color:#fff">Nos Chantiers En Action</h2>
+    </div>
+
+    <div class="cards-container">
+      <div class="card" style="--r: -8deg; --ty: 10px;">
+        <img src="images/visite1.jpeg" alt="Visite de chantier TE5Am">
+        <div class="card-overlay"><h3 class="card-title">Visite de Chantier</h3></div>
+      </div>
+      <div class="card" style="--r: -4deg; --ty: -15px;">
+        <img src="images/visite2.jpeg" alt="Suivi des travaux TE5Am">
+        <div class="card-overlay"><h3 class="card-title">Suivi des Travaux</h3></div>
+      </div>
+      <div class="card" style="--r: 2deg; --ty: 5px;">
+        <img src="images/visite3.jpeg" alt="Contrôle qualité TE5Am">
+        <div class="card-overlay"><h3 class="card-title">Contrôle Qualité</h3></div>
+      </div>
+      <div class="card" style="--r: -3deg; --ty: -10px;">
+        <img src="images/visite4.jpeg" alt="Équipe technique TE5Am">
+        <div class="card-overlay"><h3 class="card-title">Équipe Technique</h3></div>
+      </div>
+      <div class="card" style="--r: 6deg; --ty: 12px;">
+        <img src="images/visite5.jpeg" alt="Livraison finale TE5Am">
+        <div class="card-overlay"><h3 class="card-title">Livraison Finale</h3></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ===== SERVICES ===== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow eyebrow-dark"><i class="fa-solid fa-trowel"></i> Nos Services</div>
+      <h2 class="section-title">Ce Que Nous Construisons</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+        <h3>Gros Œuvre</h3>
+        <p>Fondations, structures porteuses et maçonnerie pour des bâtiments solides et durables.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-house-chimney-crack"></i></div>
+        <h3>Rénovation</h3>
+        <p>Modernisation complète ou partielle de vos espaces, résidentiels ou professionnels.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-road"></i></div>
+        <h3>Génie Civil</h3>
+        <p>Voiries, ouvrages d'art et infrastructures pour vos projets publics et privés.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+        <h3>Plomberie & Électricité</h3>
+        <p>Installations techniques complètes, aux normes et pensées pour durer.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-tree-city"></i></div>
+        <h3>Aménagement Extérieur</h3>
+        <p>Terrasses, clôtures et espaces verts pour sublimer vos extérieurs.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="container about-inner">
+    <div class="about-media">
+      <img class="about-img-main" src="images/visite3.jpeg" alt="Équipe TE5Am sur chantier">
+      <img class="about-img-sub" src="images/ozi.jpeg" alt="Détail chantier TE5Am">
+      <div class="about-badge">
+        <i class="fa-solid fa-award"></i>
+        <div><strong>15+</strong><span>Ans d'expertise</span></div>
+      </div>
+    </div>
+
+    <div class="about-content">
+      <div class="eyebrow eyebrow-dark"><i class="fa-solid fa-helmet-safety"></i> À Propos de TE5Am</div>
+      <h2 class="section-title">Une Équipe Engagée Pour Vos Projets</h2>
+      <p class="about-text">
+        TE5Am accompagne particuliers, promoteurs et collectivités dans la réalisation
+        de leurs projets de construction, de la première esquisse à la remise des clés.
+        Notre force : des équipes qualifiées, un suivi rigoureux et un respect strict
+        des délais et des normes de sécurité.
+      </p>
+
+      <ul class="about-list">
+        <li><i class="fa-solid fa-circle-check"></i> Devis clair et transparent</li>
+        <li><i class="fa-solid fa-circle-check"></i> Équipes qualifiées et certifiées</li>
+        <li><i class="fa-solid fa-circle-check"></i> Respect des délais garantis</li>
+        <li><i class="fa-solid fa-circle-check"></i> Matériaux de qualité contrôlée</li>
+      </ul>
+
+      <a href="#contact" class="btn btn-outline">
+        <span>En savoir plus</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow eyebrow-dark"><i class="fa-solid fa-diagram-project"></i> Réalisations</div>
+      <h2 class="section-title">Nos Projets En Vedette</h2>
+    </div>
+
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-media">
+          <span class="project-badge badge-done">Terminé</span>
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=800&auto=format&fit=crop" alt="Résidence Al Amal">
+        </div>
+        <div class="project-body">
+          <h3>Résidence Al Amal</h3>
+          <p class="project-loc"><i class="fa-solid fa-location-dot"></i> Casablanca, Maroc</p>
+          <div class="project-specs">
+            <span><i class="fa-solid fa-ruler-combined"></i> 1 200 m²</span>
+            <span><i class="fa-solid fa-calendar"></i> 8 mois</span>
+          </div>
+          <div class="project-foot">
+            <span class="project-price">2 400 000 MAD</span>
+            <a href="#" class="btn btn-solid btn-sm">Voir le projet</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media">
+          <span class="project-badge badge-progress">En cours</span>
+          <img src="https://images.unsplash.com/photo-1541976590-713941681591?q=80&w=800&auto=format&fit=crop" alt="Centre Commercial Atlas">
+        </div>
+        <div class="project-body">
+          <h3>Centre Commercial Atlas</h3>
+          <p class="project-loc"><i class="fa-solid fa-location-dot"></i> Marrakech, Maroc</p>
+          <div class="project-specs">
+            <span><i class="fa-solid fa-ruler-combined"></i> 4 500 m²</span>
+            <span><i class="fa-solid fa-calendar"></i> 14 mois</span>
+          </div>
+          <div class="project-foot">
+            <span class="project-price">9 800 000 MAD</span>
+            <a href="#" class="btn btn-solid btn-sm">Voir le projet</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media">
+          <span class="project-badge badge-done">Terminé</span>
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=800&auto=format&fit=crop" alt="Villa Les Oliviers">
+        </div>
+        <div class="project-body">
+          <h3>Villa Les Oliviers</h3>
+          <p class="project-loc"><i class="fa-solid fa-location-dot"></i> Rabat, Maroc</p>
+          <div class="project-specs">
+            <span><i class="fa-solid fa-ruler-combined"></i> 620 m²</span>
+            <span><i class="fa-solid fa-calendar"></i> 6 mois</span>
+          </div>
+          <div class="project-foot">
+            <span class="project-price">1 750 000 MAD</span>
+            <a href="#" class="btn btn-solid btn-sm">Voir le projet</a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="projects-dots">
+      <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BAND ===== -->
+<section class="cta-band">
+  <div class="container cta-inner">
+    <div>
+      <h2>Un projet en tête ? Parlons-en.</h2>
+      <p>Obtenez une estimation gratuite et sans engagement sous 24h.</p>
+    </div>
+    <a href="#contact" class="btn btn-outline btn-light">
+      <span>Demander un devis</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <a href="#" class="logo logo-footer">
+        <span class="logo-icon"><i class="fa-solid fa-helmet-safety"></i></span>
+        <span class="logo-text">TE5<span>Am</span></span>
+      </a>
+      <p>Votre partenaire de confiance pour tous vos projets de construction, de la conception à la livraison.</p>
+      <div class="footer-social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Liens Rapides</h4>
+      <a href="#home">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#about">À propos</a>
+      <a href="#projects">Réalisations</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#">Gros Œuvre</a>
+      <a href="#">Rénovation</a>
+      <a href="#">Génie Civil</a>
+      <a href="#">Aménagement Extérieur</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><i class="fa-solid fa-location-dot"></i> 12 Rue des Bâtisseurs, Casablanca</p>
+      <p><i class="fa-solid fa-phone"></i> +212 522 00 00 00</p>
+      <p><i class="fa-solid fa-envelope"></i> contact@te5am.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© 2026 TE5Am. Tous droits réservés.</span>
+      <span>Conçu avec <i class="fa-solid fa-heart"></i> par TE5Am</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
